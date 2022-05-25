@@ -54,39 +54,39 @@ const Header = ({ type }) => {
           type === "list" ? "headerContainer listMode" : "headerContainer"
         }
       >
-        <div className="headerList">
-          <div className="headerListItem active">
+        <div className="headerList d-md-flex flex-column flex-md-row p-4  ">
+          <div className="headerListItem  transition p-3">
             <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
+            <span className="transition">Stays</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem transition p-3">
             <FontAwesomeIcon icon={faPlane} />
             <span>Flights</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem transition p-3">
             <FontAwesomeIcon icon={faCar} />
             <span>Car rentals</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem transition p-3">
             <FontAwesomeIcon icon={faBed} />
             <span>Attractions</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem transition p-3">
             <FontAwesomeIcon icon={faTaxi} />
             <span>Airport taxis</span>
           </div>
         </div>
         {type !== "list" && (
           <>
-            <h1 className="headerTitle">
+            <h1 className="headerTitle p-2">
               A lifetime of discounts? It's Genius.
             </h1>
-            <p className="headerDesc">
+            <p className="headerDesc p-2">
               Get rewarded for your travels – unlock instant savings of 10% or
               more with a free Lamabooking account
             </p>
-            <button className="headerBtn">Sign in / Register</button>
-            <div className="headerSearch">
+            <button className="headerBtn ml-3">Sign in / Register</button>
+            <div className="headerSearch p-4">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
                 <input
@@ -96,7 +96,7 @@ const Header = ({ type }) => {
                   onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
-              <div className="headerSearchItem">
+              <div className="headerSearchItem d-none d-md-block">
                 <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
                 <span
                   onClick={() => setOpenDate(!openDate)}
@@ -116,7 +116,7 @@ const Header = ({ type }) => {
                   />
                 )}
               </div>
-              <div className="headerSearchItem">
+              <div className="headerSearchItem d-none d-md-block">
                 <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                 <span
                   onClick={() => setOpenOptions(!openOptions)}

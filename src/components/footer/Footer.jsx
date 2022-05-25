@@ -3,8 +3,8 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="fLists">
-        <ul className="fList">
+      <div className="fLists d-flex flex-sm-row flex-column col-sm-6 col-md-9 col-2 justify-content-between mx-auto ">
+        <ul className="fList d-none">
           <li className="fListItem">Countries</li>
           <li className="fListItem">Regions</li>
           <li className="fListItem">Cities</li>
@@ -27,7 +27,7 @@ const Footer = () => {
           <li className="fListItem">Travel communities </li>
           <li className="fListItem">Seasonal and holiday deals </li>
         </ul>
-        <ul className="fList">
+        <ul className="fList d-none">
           <li className="fListItem">Car rental </li>
           <li className="fListItem">Flight Finder</li>
           <li className="fListItem">Restaurant reservations </li>
@@ -44,7 +44,7 @@ const Footer = () => {
           <li className="fListItem">Terms & conditions</li>
         </ul>
       </div>
-      <div className="fText">Copyright © 2022 Lamabooking.</div>
+      <div className="fText text-center py-3">Copyright © 2022 Lamabooking.</div>
     </div>
   );
 };
